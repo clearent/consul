@@ -919,6 +919,9 @@ func FixupCheckType(raw interface{}) error {
 		case "docker_container_id":
 			rawMap["DockerContainerID"] = v
 			delete(rawMap, "docker_container_id")
+		case "tls_skip_verify":
+			rawMap["TLSSkipVerify"] = v
+			delete(rawMap, "tls_skip_verify")
 		}
 	}
 
