@@ -74,6 +74,7 @@ type AgentServiceCheck struct {
 	HTTP              string `json:",omitempty"`
 	TCP               string `json:",omitempty"`
 	Status            string `json:",omitempty"`
+	TLSSkipVerify     string `json:",omitempty"`
 }
 type AgentServiceChecks []*AgentServiceCheck
 
